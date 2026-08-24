@@ -1,0 +1,10 @@
+services:
+  php:
+    image: php:8.3-cli
+    container_name: estudo-framework-php
+    volumes:
+      - ./php:/var/www/html
+    working_dir: /var/www/html
+    ports:
+      - "3000:3000"
+    command: sh -c "sleep infinity"
